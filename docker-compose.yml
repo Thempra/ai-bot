@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  kubot:  
+    container_name: aibot
+    image: aibot
+    restart: always
+    environment:
+      - API_ID=123456
+      - API_HASH=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      - OPENAI_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      - SRC_CHANNEL_ID=-123456789
+      - MAX_ITERATIONS_REMEMBER=5
